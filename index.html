@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Student Hub</title>
-<link rel="stylesheet" href="style.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<base target="_top">
+
+<?!= include("Style"); ?>
+
 </head>
 
 <body>
 
-<header>
-<h1>🎓 Student Hub</h1>
-<p>Welcome to the student support system</p>
-</header>
+<div id="content">
 
+<div class="home">
 
-<div class="container">
+<div class="logo">
 
-<button onclick="openPage('report.html')">
+<h1>🏫 Umoja Palms Renaissance</h1>
+
+<p>Student Hub</p>
+
+</div>
+
+<div class="menu">
+
+<button onclick="openRegister()">
+
+👤 Student Registration
+
+</button>
+
+<button onclick="openReportIssue()">
+
 📢 Report an Issue
+
 </button>
 
-<button onclick="openPage('track.html')">
-🔎 Track My Report
+<button onclick="openTrackReport()">
+
+📍 Track My Reports
+
 </button>
 
-<button onclick="openPage('register.html')">
-📝 Student Registration
+<button onclick="openDashboard()">
+
+👨‍🎓 My Dashboard
+
 </button>
 
 </div>
 
+</div>
 
-<script src="script.js"></script>
+</div>
+
+<?!= include("Javascript"); ?>
 
 </body>
+
 </html>
